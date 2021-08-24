@@ -1,0 +1,109 @@
+$ancho: 100px;
+$padding: 5px;
+
+.imageMain{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	float: none;	
+}
+
+.fondoImagenMain{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+
+.tablaProductoDest{
+	border-collapse: collapse;
+	font-family: 'Overpass', sans-serif;
+	margin-left: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	&__th{
+		border: 3px solid;
+	}
+	&__td{
+		border: 3px solid;
+	}
+	&__listaProductoDestacado{
+		list-style: none;
+		text-align: left;
+		margin-left: -21px;
+		margin-right: 20px;	
+	}
+}
+
+.productosGeneral{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: auto auto ;
+	background-color: rgb(192, 189, 189);
+	&__cadaProducto{/*no me tome la "&"*/
+		margin: 20px;
+		display:flex;
+		width: ($ancho*4)+55;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__descripcionProducto{
+		display: grid;
+		font-size: 20px;
+		font-family: 'Overpass', sans-serif;
+		justify-content: start;
+	}
+	&__cadaProducto--lentes3{
+		grid-row: 1 /3;
+	}
+	&__precio{
+		font-weight: bold;
+		font-style: italic;
+	}	
+}
+
+.iframeContacto{
+margin: 20px;
+}
+
+.mainNosotros{
+	width: 100%;
+	height: 500px;
+	&__textoNosotros{
+		font-family: 'Overpass', sans-serif;
+		padding-left: $pading+15;	
+		text-align: start;
+	}
+}
+
+.formContacto{
+	margin: 5px;
+	padding: ($pading+5)/2;
+	&__btnEnviarFormulario{
+		width: $ancho*2;
+		padding: $padding*2;
+		margin-bottom: 15px;
+		margin-left: 30px;
+		transition: all 0.5s ease-out;
+	}
+	&__btnEnviarFormulario:hover{
+		background-color: rgb(38, 38, 226);
+		color: white;
+		transform: scale(1.2);
+	}
+}
+
+legend{
+	margin-bottom: 10px;
+}
+
+.preguntFrec{
+	font-family: 'Overpass', sans-serif;
+	padding-left: ($padding*10)-30;
+}
+
+.collapseChilli{
+	background-color: rgb(192, 189, 189)
+}

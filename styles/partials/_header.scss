@@ -1,0 +1,33 @@
+$padding: 5px;
+
+nav{
+	padding-left: $padding*4;
+}
+#header{
+	background-color: black;
+	padding: 20px;
+}
+
+.listaNav{
+	margin-left: 10px;
+	font-family: 'Overpass', sans-serif;
+	position: relative;
+	list-style: none;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	&__pag {
+		margin-right: 25px;
+		font-size: 1.3rem;
+		display: flex;
+	}
+	&__pag:hover{
+		transition: 1s;
+		font-size: 1.5rem;
+	}
+	&__white{
+		color: white;
+		text-decoration: none;
+	}
+}
